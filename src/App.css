@@ -73,6 +73,18 @@
     
 }
 
+.squareBox{
+    display: inline-block;
+    width: 33px;
+    height: 30px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+
+.squareText{
+    padding-left: 4px;
+}
+
 .card .card-img-top{
     width: 100%;
 }
@@ -119,6 +131,16 @@
     font-size: 15px;
 }
 
+.cardLink{
+    text-decoration: none ;
+    color: #0b314f;
+}
+
+.cardLink:hover{
+    text-decoration: none;
+    color: #0b314f;
+}
+
 .movieFilters button{
     text-align: start;
     font-size: 15px;
@@ -132,4 +154,73 @@
     background-color: #E3E6E5;
     color: #848685;
     font-weight: 500;
+}
+
+.detailMovie{
+    position: relative;
+}
+
+.detailContainer{
+    position: relative;
+    opacity: 0.3;
+}
+
+.imgBackdrop{
+    position: absolute;
+    height: 50vh;
+    width: 100%;
+}
+
+.detailContent{
+    position: absolute;
+}
+
+.detailImage img{
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.detailMovieName{
+    /* margin-bottom: 20px; */
+}
+
+.detailMovieScore{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+.detailMovieTitle{
+    font-size: large;
+    font-weight: 800;
+}
+
+.detailBox{
+    width: 60px;
+    height: 30px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.genresButton{
+    background: transparent;
+    border: none;
+    color: black;
+}
+
+.genresButton:hover{
+    background: none;
+    color: #282B2A;
+}
+
+.scoreContent{
+    margin-right: 10px;
+    display: inline;
+}
+
+.userScore{
+    position: absolute;
 }

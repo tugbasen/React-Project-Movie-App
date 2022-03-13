@@ -4,6 +4,7 @@ import MovieList from '../components/MovieList';
 import MovieFilters from '../components/MovieFilters';
 
 const MainScreen = () => {
+
   return (
     <div className='container'>
         <div className='row'>

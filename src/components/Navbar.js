@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FaSearch } from 'react-icons/fa';
 
 const Navbar = () => {
   return (
@@ -36,8 +37,13 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link to="/#">Language</Link>
+            <Link to="/#">
+              <span className="squareBox">
+                <p className="squareText">EN</p>
+              </span>
+            </Link>
           </li>
+
           <li>
             <Link to="/#">Login</Link>
           </li>
@@ -45,7 +51,9 @@ const Navbar = () => {
             <Link to="/#">JoinTMDb</Link>
           </li>
           <li>
-            <Link to="/#">search</Link>
+            <Link to="/#">
+              <FaSearch />
+            </Link>
           </li>
         </ul>
       </div>

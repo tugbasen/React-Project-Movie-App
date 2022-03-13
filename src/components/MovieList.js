@@ -14,6 +14,8 @@ const MovieList = (props) => {
       .then(({ data }) => setMovies(data.results))
       .catch((err) => console.log(err));
   }, []);
+
+  
   return (
     <div>
       <div className="container">
