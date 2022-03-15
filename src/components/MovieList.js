@@ -15,14 +15,12 @@ const MovieList = (props) => {
       .catch((err) => console.log(err));
   }, []);
 
-  
   return (
     <div>
       <div className="container">
         <div className="grid">
-          {
-            movies && movies.map((movie) => <MovieCard movies={movie} key={movie.id} /> )
-          }
+          {movies &&
+            movies.map((movie) => <MovieCard movies={movie} key={movie.id} />)}
         </div>
       </div>
     </div>

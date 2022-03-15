@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import {
   CircularProgress,
   Typography,
@@ -24,7 +24,7 @@ const MovieCard = ({ movies }) => {
       <Link
         className="cardLink"
         to={`detail/${movies.id}`}
-        onClick={() => <MovieDetails movies={movies.id} />}
+        onSubmit={() => <MovieDetails movieDetail={movies.id} />}
       >
         <div>
           <img
