@@ -1,22 +1,14 @@
 import React from "react";
-import { Card, CardGroup } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 
 const CastCard = ({ image, casts }) => {
   return (
-    <Card className="card shadow mb-5 bg-body rounded" >
-      <div style={{ position: "relative" }}>
-        <img
-          src={`https://image.tmdb.org/t/p/w200/${image}`}
-          alt="img"
-          className="card-img-top"
-        />
-      </div>
-      <div className="card-body">
-        <p className="card-title">
-          <b>{casts.name}</b>
-        </p>
-        <p>{casts.character}</p>
-      </div>
+    <Card className="w-25 card shadow mb-5 bg-body rounded castCard">
+      <Card.Img src={`https://image.tmdb.org/t/p/w200/${image}`} />
+      <Card.Body style={{ height: "15vh" }}>
+        <Card.Title>{casts.name}</Card.Title>
+        <Card.Text style={{ fontSize: 14 }}>{casts.character}</Card.Text>
+      </Card.Body>
     </Card>
   );
 };

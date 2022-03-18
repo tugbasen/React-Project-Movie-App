@@ -32,7 +32,7 @@ const MovieCard = ({ movies }) => {
               movies && movies.poster_path
             }`}
             alt={`${movies} Poster`}
-            className="card-img-top"
+            className="card-img-top movieCardImage"
           />
           {/* <span className="card__rating">{movies.vote_average}</span> */}
           <span>
@@ -69,7 +69,7 @@ const MovieCard = ({ movies }) => {
             </Box>
           </span>
         </div>
-        <div className="card-body">
+        <div className="card-body movieCardBody">
           <p className="card-title">
             <b>{movies.title}</b>
           </p>
