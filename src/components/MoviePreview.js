@@ -22,6 +22,8 @@ const MoviePreview = ({ movies }) => {
       color: "#FFFFFF",
     },
   })(Typography);
+
+
   return (
     <div className="movieSummary">
       <div className="movieBackdrop">
@@ -63,7 +65,7 @@ const MoviePreview = ({ movies }) => {
                   >
                     {"\u25CF"}
                   </span>
-                  {/* <span style={{fontSize: 13}}>{movies.genres.length > 1 ? movies.genres.map(({ name }) => name).join(", ") : movies.genres.name}</span> */}
+                  <span style={{fontSize: 13}}>{movies?.genres?.map( (item) => item.name).join(", ")}</span>
                   <span
                     style={{
                       color: "#fff",
@@ -156,7 +158,7 @@ const MoviePreview = ({ movies }) => {
                   <div style={{fontSize: 15}}>{movies.overview}</div>
                 </div>
                 <div style={{marginTop: 20}}>
-                    {/* <div><b>{movies.production_companies.map((item) => item.name).join(", ")}</b></div> */}
+                    <div><b>{movies?.production_companies?.map((item) => item.name).join(", ")}</b></div>
                     <div>Director</div>
                 </div>
               </div>

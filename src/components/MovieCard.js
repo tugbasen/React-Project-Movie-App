@@ -24,7 +24,7 @@ const MovieCard = ({ movies }) => {
       <Link
         className="cardLink"
         to={`detail/${movies.id}`}
-        onSubmit={() => <MovieDetails movieDetail={movies.id} />}
+        // onClick={() => <MovieDetails movieId={movies.id} />}
       >
         <div>
             <img
