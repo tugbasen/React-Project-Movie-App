@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -61,10 +62,10 @@
     margin: 1em auto;
 }
 
-.grid{
+.movie-container {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 0.5em;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    grid-gap: 15px;
 }
 
 .info{
@@ -141,14 +142,19 @@
     color: #0b314f;
 }
 
-.movieFilters button{
+.buttonStyle{
+    width: 100%;
     text-align: start;
-    font-size: 15px;
+}
+
+.buttonArrow{
+    text-align: end;
+    width: auto;
 }
 
 .submitButton{
     display: block;
-    width: 200px;
+    width: 150px;
     cursor: pointer;
     text-align: center;
     background-color: #E3E6E5;
@@ -183,7 +189,7 @@
     overflow-y: hidden;
     flex-direction: column;
     display: flex;
-    height: 70vh;
+    height: 75vh;
 }
 
 .keywordsButtons{
@@ -265,4 +271,5 @@
     color: #98A29D;
     margin-bottom: 10px;
 }
+
 

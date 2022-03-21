@@ -17,8 +17,8 @@ const MovieList = (props) => {
 
   return (
     <div>
-      <div className="container">
-        <div className="grid">
+      <div className="">
+        <div className="movie-container">
           {movies &&
             movies.map((movie) => <MovieCard movies={movie} key={movie.id} />)}
         </div>

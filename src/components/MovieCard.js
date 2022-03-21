@@ -27,13 +27,13 @@ const MovieCard = ({ movies }) => {
         onSubmit={() => <MovieDetails movieDetail={movies.id} />}
       >
         <div>
-          <img
-            src={`https://image.tmdb.org/t/p/w200/${
-              movies && movies.poster_path
-            }`}
-            alt={`${movies} Poster`}
-            className="card-img-top movieCardImage"
-          />
+            <img
+              src={`https://image.tmdb.org/t/p/w200/${
+                movies && movies.poster_path
+              }`}
+              alt={`${movies} Poster`}
+              className="card-img-top movieCardImage"
+            />
           {/* <span className="card__rating">{movies.vote_average}</span> */}
           <span>
             <Box position="relative" display="inline-block" className="score">

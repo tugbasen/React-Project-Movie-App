@@ -14,6 +14,8 @@ import { MdBookmarkAdd } from "react-icons/md";
 import { AiFillStar } from "react-icons/ai";
 import { BsFillPlayFill } from "react-icons/bs";
 
+import * as S from './styles';
+
 const MoviePreview = ({ movies }) => {
   const WhiteTextTypography = withStyles({
     root: {
@@ -123,6 +125,7 @@ const MoviePreview = ({ movies }) => {
                     </Box>
                   </span>
                   <span style={{ position: "absolute", marginTop: 15 }}>
+                  <S.MoviePreview>
                     <span className="userScore">
                       User <br /> Score
                     </span>
@@ -142,6 +145,7 @@ const MoviePreview = ({ movies }) => {
                       <BsFillPlayFill />
                     </span>
                     <span>Play Trailer</span>
+                    </S.MoviePreview>
                   </span>
                 </div>
                 <div className="tagline">

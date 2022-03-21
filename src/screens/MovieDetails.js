@@ -7,6 +7,7 @@ import { BsLink } from "react-icons/bs";
 
 import CastCard from "../components/CastCard";
 import MoviePreview from "../components/MoviePreview";
+import * as S from '../components/styles';
 
 const MovieDetails = ({ movieDetail }) => {
   const [movies, setMovies] = useState([]);
@@ -35,6 +36,7 @@ const MovieDetails = ({ movieDetail }) => {
   }, []);
 
   return (
+    <S.MovieDetails>
     <div className="container" >
       <MoviePreview movies={movies} />
       <div >
@@ -133,6 +135,7 @@ const MovieDetails = ({ movieDetail }) => {
         </Row>
       </div>
     </div>
+    </S.MovieDetails>
   );
 };
 

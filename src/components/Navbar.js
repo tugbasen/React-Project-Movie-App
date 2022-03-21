@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaSearch } from 'react-icons/fa';
+import * as S from './styles';
 
 const Navbar = () => {
   return (
@@ -30,6 +31,7 @@ const Navbar = () => {
       </div>
 
       <div className="settingsMenus">
+      <S.NavBar>
         <ul className="settingMenu ">
           <li>
             <Link to="/#">
@@ -56,6 +58,7 @@ const Navbar = () => {
             </Link>
           </li>
         </ul>
+        </S.NavBar>
       </div>
     </div>
   );
